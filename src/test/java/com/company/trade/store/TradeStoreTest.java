@@ -94,11 +94,5 @@ class TradeStoreTest {
         Assertions.assertEquals('Y', store.getTrade("T2").getExpired());
         Assertions.assertEquals('Y', store.getTrade("T3").getExpired());
 
-       /* Exception exception = Assertions.assertThrows(Exception.class, () ->  store.addTrade(t3));
-        String expectedMessage = ExceptionMessage.INVALID_MATURITY_DATE.getErrorMessage();
-        String actualMessage = exception.getMessage();
-        System.out.println(actualMessage);
-        Assertions.assertEquals(actualMessage, expectedMessage);*/
-
     }
 }
